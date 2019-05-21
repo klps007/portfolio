@@ -9,29 +9,56 @@
 </head>
 <body>
 
-    <h1>My Portfolio</h1>
+    <header> 
+
+        <div class="topnav">
+            <a class="#active" href="#about">About</a>
+            <a href="#history">History</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#profiles">Profiles</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+        <div class="header"></div>
+        <img src="jacksonville_beach.png" alt="Jacksonville Beach" class="centre">
+        
+    </header>
+
+          
+
+
+<nav></nav>
+
+
+ <div class="grid-wrapper">
+        <div class="item1"><h2>About</h2> </div>
+        <div class="item2"><h2>History</h2></div>
+        <div class="item3"><h2>Skills</h2></div>
+        <div class="item4"><h2>Portfolio</h2></div>
+        <div class="item5"><h2>Contact</h2>   
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>Name: <input type="text" name="name" /></label>   
+                </p>
+                <p>
+                  <label>Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Subject: <textarea name="subject"></textarea></label>
+                  </p>
+                <p>
+                  <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit">Send</button>
+                </p>
+              </form> 
+        </div>
+ </div>
     
 
-    <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-          <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
-        </p>
-        <p>
-          <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form> 
-         
+   
+
 </body>
 </html>
