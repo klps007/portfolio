@@ -1,109 +1,315 @@
 * {
 
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-
-    background-color: aqua;
+    width: 100vw
+    /* background-color: aqua; */
 }
 
-/* div.header {
+.h3 {
 
-    position: absolute; 
-    margin-top: 20px; 
-    margin-left:20px; 
-    width: 100%; 
-    background-color: green;
-    align-content: center; */
+   font-family: Anton;
+   font-size: 14pt;
+   color: blue;
+   text-align: bottom, left;
+   
 
+ 
+}
 
+.responsive {
+        width: 100%;
+        /* height: 8cm; */
+}
 
- .header {
-
-    display: block;
-    align-content: center;
-    margin-top: 20px; 
-    margin-left: auto;
-    margin-right: auto;
-    background-color: blue; 
-
- }
 
 .topnav {
-    background-color: #333;
+    background-color:powderblue;
     overflow: hidden;
   }
   
 
   .topnav a {
     float: right;
-    color: #f2f2f2;
+    color: #004875
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Anton', sans-serif;
   }
   
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    coloR: green;
   }
   
   .topnav a.active {
     background-color: #4CAF50;
-    color: white;
+    color: orange;
   }
 
 
-    
-
-
-    
-
-
-
-    
-
 .grid-wrapper {
-    padding: 20px;
+    /* padding: 20px; */
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(5, 200px);
-    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 100vh;
+    
 
 }
 
-.item1 {
-    grid-area: item1;
-    background-color: red;
+.about-heading-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color:lightblue;
+    font-size: 16pt;
+    font-family: Anton;
+    text-align: justify;
+    color: #004875;
+    letter-spacing: 3pt;
+
+}
+
+.about-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    /* grid-area: about; */
+    background-color: rgba(188, 232, 254);
+    padding: 0 150px;
+    /* padding-right: 50pt;
+    margin: 10pt; */
+    
+}
+
+.about-text {
+    width: 40%;
+}
+
+.about-img {
+    width: 25%;
+}
+
+.history{
+    background-color: rgba(231, 218, 208, 0.5);
     grid-column: span 1;
     grid-row: span 1;
-
 }
-.item2 {
-    grid-area: item2;
+
+.history-heading-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color:lightblue;
+    font-size: 16pt;
+    font-family: Anton;
+    text-align: justify;
+    color: #004875;
+    letter-spacing: 3pt;
+
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    color: yellow;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: static;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    height: 8cm;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
     background-color: blue;
-    grid-column: span 1;
-    grid-row: span 1;
-}
-.item3 {
+    border-radius: 50%;
+    top: 15px;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
+.skills {
     grid-area: item3;
-    background-color: greenyellow;
+    background-color: pink;
     grid-column: span 1;
     grid-row: span 1;
 }
-.item4 {
+.skills-heading-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color:lightblue;
+    font-size: 16pt;
+    font-family: Anton;
+    text-align: justify;
+    color: #004875;
+    letter-spacing: 3pt;
+}
+
+.portfolio {
     grid-area: item4;
-    background-color: blueviolet;
+    background-color: wheat;
     grid-column: span 1;
     grid-row: span 1;
 }
-.item5 {
-    grid-area: item5;
-    background-color: brown;
-    grid-column: span 1;
-    grid-row: span 1;
+
+.portfolio-heading-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color:lightblue;
+    font-size: 16pt;
+    font-family: Anton;
+    text-align: justify;
+    color: #004875;
+    letter-spacing: 3pt;
+}
+
+
+.contact-heading-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color:lightblue;
+    font-size: 16pt;
+    font-family: Anton;
+    color: #004875;
+    letter-spacing: 3pt;
+}
+
+.contact-flex {
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+
+    flex-direction: column; /* justify-content: center; */
+    /* grid-area: about; */
+    background-color: rgba(188, 232, 254);
+    /* padding: 0 150px; */
+    /* padding-right: 50pt;
+    margin: 10pt; */
+    
+}
+
+.contact-text {
+    width: 40%;
+    text-align: right;
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 14pt,
+
+    }
+
+.contact-form-flex {
+    width: 50%;
+
+
+/* .box {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    width: 40%;
+    height: auto;
+    background-color: wheat;
+    position: static; */
+
+}
+.h2 {
+
+    font-size: 16px;
+    font-family: Anton;
+    text-align: justify;
+    color: #004875;
+    letter-spacing: .1em
+
+}
+
+
 }
