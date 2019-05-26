@@ -7,37 +7,38 @@
 
 body {
   width: 100vw
-  
 }
 
 .h3 {
 
- font-family: 'Anton';
- font-size: 14pt;
- color: blue;
- text-align: bottom, left;
- 
+  font-family: 'Anton';
+  font-size: 14pt;
+  color: blue;
+  text-align: bottom, left;
+
 
 
 }
 
 .responsive {
-      width: 100%;
-    
+  width: 100%;
+
 }
 
 
-.topnav-header a.topnav-brand,.topnav-header a.topnav-brand:hover,.topnav-header a.topnav-brand:focus {
+.topnav-header a.topnav-brand,
+.topnav-header a.topnav-brand:hover,
+.topnav-header a.topnav-brand:focus {
   display: inline-block;
   padding: 33px 0px 57px;
-  
+
 
 }
 
 .topnav p {
- 
+
   float: left;
-  color:blue;
+  color: blue;
   text-align: center;
   padding: 14px 16px;
   text-decoration-style: wavy;
@@ -83,10 +84,11 @@ body {
   line-height: 2;
   font-family: 'Anton';
   letter-spacing: 3px;
-  
+
 }
+
 .hero-text h2 span {
-  
+
   color: white;
   font-size: 40px;
   font-weight: 500;
@@ -95,6 +97,7 @@ body {
   line-height: 1;
   text-transform: uppercase;
 }
+
 .hero-text p {
   color: white;
   font-size: 20px;
@@ -129,7 +132,7 @@ body {
   /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
   grid-template-columns: 1fr;
   grid-auto-rows: 100vh;
-  
+
 
 }
 
@@ -138,58 +141,51 @@ body {
   align-items: center;
   justify-content: center;
   height: 100px;
-  background-color:lightblue;
   font-size: 16pt;
-  font-family: Anton;
+  font-family: 'Anton';
   text-align: justify;
   color: #004875;
   letter-spacing: 3pt;
+  background-color: rgba(188, 232, 254);
 
 }
 
 .about-flex {
   width: 100%;
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   align-items: center;
-  /* justify-content: center; */
-  /* grid-area: about; */
-  background-color: rgba(188, 232, 254);
-  padding:  5%;
-  /* padding-right: 50pt;
-  margin: 10pt; */
-  
-}
-.about-text p {
-font-family: 'Encode Sans', sans-serif;
-font-size: 14pt;
-font-weight: 200;
-letter-spacing: 1pt;
-width: 40%;
+  background-color: aliceblue;
 
 }
-.about-text p span {
+
+.about-text p {
 
   font-family: 'Encode Sans', sans-serif;
-  font-size: 13pt;
+  font-size: 11pt;
   letter-spacing: 1pt;
+  color: #004875;
+
 }
 
 .about-text {
-  width: 50%;
-  padding: 10pt;
+  width: 60%;
+  font-weight: bold;
+  padding: 18pt;
   text-align: justify;
+  color: #004875;
+  font-family: 'Encode Sans', sans-serif;
+
 }
 
 .about-img {
-padding-left: 20px;
+  padding: 20px;
 
 
 }
 
 .history {
-  background-color:  rgba(188, 232, 254);
+  background-color: aliceblue;
   grid-column: span 1;
   grid-row: span 1;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
@@ -200,7 +196,7 @@ padding-left: 20px;
   align-items: center;
   justify-content: center;
   height: 100px;
-  background-color:lightblue;
+  background-color: rgba(188, 232, 254);
   font-size: 14pt;
   font-family: 'Anton';
   text-align: justify;
@@ -208,11 +204,12 @@ padding-left: 20px;
   letter-spacing: 3pt;
 
 }
+
 .history p {
 
   font-family: 'Encode Sans Semi Expanded', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 15px;
   color: #004875;
   text-align: left;
@@ -221,169 +218,202 @@ padding-left: 20px;
 .history h3 {
 
   font-family: 'Encode Sans Semi Expanded', sans-serif;
-  font-size: 30px;
-  font-weight: 100;
+  font-size: 20px;
+  font-weight: 50;
   color: #004875;
- 
-  
-
- 
 
 }
 
 .history h4 {
- 
+
   font-family: 'Encode Sans Semi Expanded', sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: #004875;
-  
+
 
 }
-.history h5 { 
 
-  font-size: 30px;
+.history h5 {
+
+  font-size: 22px;
   color: #004875;
   font-family: 'Anton';
-
- 
+  padding-left: 50px;
+  padding-top: 20px;
 
 }
 
 .l-block-spacing {
 
-	
-	min-height:80vh;
-	padding:2em 0 4em 0;
+
+  min-height: 80vh;
+  padding: 2em 0 4em 0;
 
 }
 
 .l-contained {
 
-	max-width:1000px;
-	margin-left:auto;
-	margin-right:auto;
-	
-	padding-left:1em;
-  padding-right:1em;
-  
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-left: 1em;
+  padding-right: 1em;
+
 }
 
-	@media all and (min-width:40em) {
+@media all and (min-width:40em) {
 
-		padding-left:2em;
-		padding-right:2em;
+  padding-left: 2em;
+  padding-right: 2em;
 
 
-	}
+}
 
 .timeline-list {
 
-	border-left: 5px solid #ccc;
-	padding-bottom: 1em;
-	position: relative;
-	max-width:700px;
-  margin:0 auto;
- 
+  border-left: 5px solid #004875;
+  padding-bottom: 1em;
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+
+
 }
-  /* &:before {
-		content: "";
-     border-left: 5px solid #CCC;
-     left: -0.25em;
-     top: 2em;
-     height: 50%;
-     position: absolute;
+
+:before {
+  content: "";
+  border-left: 5px solid;
+  left: -0.25em;
+  top: 1.5em;
+  position: absolute;
 
 
-	} */
-
-	/* &:after {
-		content: "";
-		position: absolute;
-		left: -1em;
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background:red;
-		border: 5px solid #004875;
-	} */
+}
 
 .timeline-list li {
 
-	margin:0 0 3em 0;
-	padding:0 2em 0em 2em;
-    position: relative;
+  margin: 0 0 3em 0;
+  padding: 0 2em 0em 2em;
+  position: relative;
+  height: 50px;
+
 
 }
+
 .timeline-list li:before {
 
-	content: "";
-	position: absolute;
-	top: 0px;
-	left: -1.45em;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	background: white;
-	border: 5px solid #004875; 
- 
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -1.45em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: blue;
+  ;
+  border: 5px solid #004875;
+
 }
- .skills-container-wrapper {
+
+.skills-container-wrapper {
   width: 100%;
-  background-color: #ddd; 
- font-family: 'Encode Sans Condensed', sans-serif;
- color:#004875;
- padding: 10px;
- text-align: left;
+  background-color: aliceblue;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  color: #004875;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
 
 
 }
+
 .skills {
-  padding-top: 10px;
+  padding-top: 5px;
+  background-color: aliceblue;
 }
 
 .skills-container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 5px;
-  width: 60%;
+  justify-content: start;
+  padding-top: 10px;
+  max-width: 100%;
 }
 
 .skills-flex {
-  justify-content: center;
-  align-content: space-around;
+  /* display: inline; */
+
   padding: 5px;
-  color: white;
-  flex-wrap: wrap;
+  padding-right: 10px;
+
 }
 
 .skills-text {
   display: flex;
-  flex-wrap: wrap;
-  width: 20%;
-  text-align: left;
+  width: 100%;
   font-family: 'Encode Sans Condensed', sans-serif;
-  font-size: 14pt;
-  color:#004875
+  font-size: 20pt;
+  font-style: italic;
+  font-weight: bold;
+  color: #004875;
+  line-height: 60px;
+  padding-left: 100px;
 
-  }
 
-.skills-html {width: 70%; background-color: #004875;}
-.skills-css {width: 70%; background-color: #004875;}
-.skills-js {width: 50%; background-color: #004875;}
-.skills-ruby {width: 50%; background-color: blue;}
-.skills-rails {width: 50%; background-color: #004875;}
-.skills-react {width: 65%; background-color: blue;}
-.skills-mongoDb {width: 80%; background-color:#004875;}
-.skills-communication {width: 90%; background-color: blue;}
-.skills-creativity {width: 90%; background-color: #004875;}
+}
+
+.skills-html {
+  width: 70%;
+  background-color: blue;
+}
+
+.skills-css {
+  width: 70%;
+  background-color: blue;
+}
+
+.skills-js {
+  width: 50%;
+  background-color: blue;
+}
+
+.skills-ruby {
+  width: 50%;
+  background-color: blue;
+}
+
+.skills-rails {
+  width: 50%;
+  background-color: blue;
+}
+
+.skills-react {
+  width: 20%;
+  background-color: blue;
+}
+
+.skills-mongoDb {
+  width: 20%;
+  background-color: blue;
+}
+
+.skills-communication {
+  width: 90%;
+  background-color: blue;
+}
+
+.skills-creativity {
+  width: 90%;
+  background-color: blue;
+}
 
 .skills-heading-flex {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100px;
-  background-color:lightblue;
+  background-color: rgba(188, 232, 254);
   font-size: 14pt;
   font-family: 'Anton';
   text-align: justify;
@@ -393,7 +423,7 @@ padding-left: 20px;
 
 .portfolio-flex {
   grid-area: item4;
-  background-color: wheat;
+  background-color: aliceblue;
   grid-column: span 1;
   grid-row: span 1;
 }
@@ -403,18 +433,24 @@ padding-left: 20px;
   align-items: center;
   justify-content: center;
   height: 100px;
-  background-color:lightblue;
+  background-color: rgba(188, 232, 254);
   font-size: 14pt;
   font-family: 'Anton';
   text-align: justify;
   color: #004875;
   letter-spacing: 3pt;
 }
-.profile-text-flex {
-width: 40%;
-text-align: right;
-font-family: 'Encode Sans Condensed', sans-serif;
-font-size: 14pt;
+
+.portfolio-text {
+  width: 40%;
+  text-align: center;
+  font-family: 'Anton';
+  font-size: 20pt;
+  color: #004875;
+  background-color: aliceblue;
+  width: 100%;
+  height: 500px;
+  padding-top: 15%;
 
 }
 
@@ -424,7 +460,7 @@ font-size: 14pt;
   align-items: center;
   justify-content: center;
   height: 100px;
-  background-color:lightblue;
+  background-color: rgba(188, 232, 254);
   font-size: 22pt;
   font-weight: bold;
   font-family: 'Anton';
@@ -434,21 +470,16 @@ font-size: 14pt;
 }
 
 .contact-flex {
+  display: inline;
   width: 100%;
   display: left;
-  padding: 20px;
+  padding: 15px;
   line-height: 40px;
-  
-  margin: 30px;
+  background: aliceblue;
   flex-wrap: wrap;
 
-  flex-direction: column; /* justify-content: center; */
-  /* grid-area: about; */
-  background-color: rgba(188, 232, 254);
-  /* padding: 0 150px; */
-  /* padding-right: 50pt;
-  margin: 10pt; */
-  
+  flex-direction: column;
+
 }
 
 .contact-text p {
@@ -457,16 +488,13 @@ font-size: 14pt;
   font-family: 'Encode Sans Condensed', sans-serif;
   font-size: 12pt;
   align-content: space-between;
-  padding: 20px;
-    color: #004875;
-    font-weight: 300;
-    
+  padding: 10px;
+  color: #004875;
+  font-weight: 300;
+  background-color: aliceblue;
 
 
-
-
-
-  }
+}
 
 .contact h3 {
   display: inline;
@@ -475,8 +503,8 @@ font-size: 14pt;
   font-size: 12pt;
   font-style: bold;
   line-height: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  /* padding-bottom: 20px;
+  padding-top: 20px; */
 
 }
 
@@ -486,6 +514,7 @@ font-size: 14pt;
   color: #004875;
   font-size: 12pt;
   font-style: bold;
+  padding 20px;
 
 
 }
@@ -497,9 +526,9 @@ font-size: 14pt;
   font-family: 'Encode Sans Condensed', sans-serif;
   line-height: 40px;
   color: #004875;
- font-weight: 200;
+  font-weight: 200;
   text-align: left;
-  background-color: rgba(188, 232, 254);
+  background-color: aliceblue;
 
 }
 
@@ -507,12 +536,3 @@ font-size: 14pt;
   display: flex;
 
 }
-
-/* .box {
-  display: flex;
-  align-items: flex-start;
-  text-align: left;
-  width: 40%;
-  height: auto;
-  background-color: wheat;
-  position: static; */ 
